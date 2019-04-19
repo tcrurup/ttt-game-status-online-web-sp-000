@@ -57,9 +57,7 @@ def over?(board)
 end
 
 def winner?(board)
-  if won?(board)
-    num_turns = board.reject(" ").length
-    if num_turns % 2 == 0 
-      
-    
+  winning_position = won?(board)
+  if winning_position
+    board[winning_position[0]]
 end
