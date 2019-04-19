@@ -55,3 +55,11 @@ end
 def over?(board)
   full?(board) || won?(board)
 end
+
+def winner?(board)
+  if won?(board)
+    num_turns = board.reject(" ").length
+    if num_turns % 2 == 0 
+      
+    
+end
