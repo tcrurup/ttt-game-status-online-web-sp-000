@@ -33,7 +33,13 @@ def won?(board)
   end
       
   WIN_COMBINATIONS.each do |winning_position|
-    if winning_position.all? {|pos| x_positions.include?(pos)} || winning_position.all? {|pos| o_positions.include?(pos)}
-      
+    if(
+      winning_position.all? {|pos| x_positions.include?(pos)} || 
+      winning_position.all? {|pos| o_positions.include?(pos)}
+    )
+      winning_position
+    else
+      nil
+    end
   end
 end
