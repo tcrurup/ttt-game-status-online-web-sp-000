@@ -40,5 +40,10 @@ def won?(board)
       return winning_position
     end
   end
+  
   return false
+end
+
+def full?(board)
+  !board.include(" ")
 end
