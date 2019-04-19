@@ -33,6 +33,6 @@ def won?(board)
   end
       
   WIN_COMBINATIONS.each do |winning_position|
-    puts winning_position.all? {|pos| x_positions.include?(pos)}
+    if winning_position.all? {|pos| x_positions.include?(pos)}
   end
 end
