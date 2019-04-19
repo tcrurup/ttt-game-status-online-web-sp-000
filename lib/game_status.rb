@@ -38,8 +38,7 @@ def won?(board)
       winning_position.all? {|pos| o_positions.include?(pos)}
     )
       return winning_position
-    else
-      nil
     end
   end
+  return false
 end
